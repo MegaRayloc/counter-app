@@ -26,11 +26,12 @@ const CounterApp = ({value = 0}) => {
     
             <h1>Contador</h1>
             <h2>{ counter }</h2>
-        <div class="botones">
-            <button onClick={handleRemove}>-1</button>
-            <button onClick={handleReset}>Reset</button>
-            <button onClick={handleAdd}>+1</button>
-        </div>
+
+            <div className="botones">
+                <button onClick={handleRemove}>-1</button>
+                <button onClick={handleReset}>Reset</button>
+                <button onClick={handleAdd}>+1</button>
+            </div>
         </>
     );
     

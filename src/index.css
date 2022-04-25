@@ -1,10 +1,11 @@
 html, body {
+    display: flex;
     background-color: #21232A;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size:1.3rem;
-    margin: 2% auto;
     padding: 50px;
+    justify-content: center;
     text-align: center;
 }
 
