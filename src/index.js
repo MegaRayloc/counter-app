@@ -1,17 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+/*import React from 'react'; ya no es necesario por la nueva version, 
+ahora en una aplicacion web de react se pueden ocupar de manera automatica sin necesidad
+de importar la libreria uwu*/
+
+//forma con react DOM Obsoleto
+/*import ReactDOM from 'react-dom';
+
+
+const saludo = <h1>hola mundo</h1>;
+
+
+const divRoot = document.querySelector('#root');
+
+ReactDOM.render( saludo, divRoot );*/
+
+//import React from "react"; innecesario
+import {createRoot} from "react-dom/client"; // llamada al React DOM para renderizar componentes
+//import PrimeraApp from "./PrimeraApp";
+import CounterApp from "./CounterApp";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ 
+// react 18
+const root = createRoot(document.getElementById('root'));
+root.render(<CounterApp value = {0}/>);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
