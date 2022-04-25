@@ -24,13 +24,13 @@ const CounterApp = ({value = 0}) => {
     return (
         <>
     
-            <h1>Contador</h1>
-            <h2>{ counter }</h2>
+            <h1>Contador de Pairos QLO</h1>
+            <h2>{ counter } Pairos QLOS</h2>
 
             <div className="botones">
-                <button onClick={handleRemove}>-1</button>
-                <button onClick={handleReset}>Reset</button>
-                <button onClick={handleAdd}>+1</button>
+                <button onClick={handleRemove}>-1 Pairo QLO</button>
+                <button onClick={handleReset}>Reset Pairo QLO</button>
+                <button onClick={handleAdd}>+1 Pairo QLO</button>
             </div>
         </>
     );
